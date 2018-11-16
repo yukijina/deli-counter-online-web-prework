@@ -16,9 +16,13 @@ def line(array)
  end
 end
 
-def take_a_number(array, string)
-  array.push(string)
-    puts "Welcome, #{string}. You are number #{array.length} in line."
+def take_a_number(array)
+  #array is an array of ticket numbers [1,2,3]
+  
+  array.push(array.size + 1)
+   
+    puts "Welcome, you are ticket number #{array.size}. You are number #{array.length} in line."
+  
 end
 
 def now_serving(array)
@@ -30,5 +34,8 @@ def now_serving(array)
   end
 end
 
-  
-  
+take_a_number(katz_deli)
+take_a_number(katz_deli)
+now_serving(katz_deli)
+now_serving(katz_deli)
+#Welcome you are ticket number 1. You are 1 in line.
